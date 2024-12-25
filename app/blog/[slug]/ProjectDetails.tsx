@@ -1,20 +1,9 @@
-//app/blog/[slug]/rojectDetailsClient.tsx
+ ///app/blog/[slug]/projectDetails.tsx
  'use client';
 
 import React from 'react';
 
 export default function ProjectDetailsClient({ project }: { project: any }) {
-  if (!project) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <h1 className="text-2xl font-bold text-red-600">Project Not Found</h1>
-        <div className="absolute top-4 left-4">
-          <a href="/About" className="text-pink-900 hover:underline text-lg">← Back to About</a>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>

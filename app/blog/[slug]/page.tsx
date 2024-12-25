@@ -1,5 +1,5 @@
  //app/blog/[slug]/page.tsx
- import ProjectDetailsClient from './ProjectDetailsClient';
+ import ProjectDetailsClient from './ProjectDetails';
 
 // Liste des projets (exemple statique, peut être remplacée par un fetch ou une DB)
 const projects = [
@@ -32,13 +32,24 @@ const projects = [
     details: {
       Duration: '1 month',
       Role: 'Developer',
-      TechnologiesUsed: ['Next.js', 'Tailwind CSS'],
+      TechnologiesUsed: ['Next js', 'Tailwind CSS'],
     },
   },
 ];
 
-export default async function ProjectDetails({ params }: { params: { slug: string } }) {
+export default function ProjectDetails({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <h1 className="text-2xl font-bold text-red-700">Project Not Found</h1>
+        <div className="absolute top-4 left-4">
+          <a href="/About" className="text-pink-900 hover:underline text-lg">← Back to About</a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
