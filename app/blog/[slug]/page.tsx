@@ -37,7 +37,7 @@ const projects = [
   },
 ];
 
-export default function ProjectDetails({ params }: { params: { slug: string } }) {
+export default function ProjectDetails(params: any) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) {

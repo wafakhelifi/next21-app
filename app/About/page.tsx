@@ -63,7 +63,7 @@ const About = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
             <p className="text-gray-700 leading-relaxed">
               I am a third-year student of applied computer science in management, specializing in Business Intelligence.
-              I'm seeking a final internship to put my skills into practice and explore new areas. Passionate about technology,
+              Im seeking a final internship to put my skills into practice and explore new areas. Passionate about technology,
               I aim to actively contribute to your team while developing my professional experience.
             </p>
           </section>

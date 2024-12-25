@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar navbar-default navbar-trans navbar-expand-lg fixed-top ${
-        pathname === '/about' ? 'bg-transparent' : 'bg-black text-white'
+        pathname === '/About' ? 'bg-transparent' : 'bg-black text-white'
       }`}
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="hidden sm:flex">
             <div className="flex space-x-4">
               {[
-                { href: '/about', label: 'About' },
+                { href: '/About', label: 'About' },
                 
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
