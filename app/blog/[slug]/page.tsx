@@ -1,4 +1,5 @@
-import ProjectDetailsClient from './ProjectDetailsClient';
+ //app/blog/[slug]/page.tsx
+ import ProjectDetailsClient from './ProjectDetailsClient';
 
 // Liste des projets (exemple statique, peut être remplacée par un fetch ou une DB)
 const projects = [

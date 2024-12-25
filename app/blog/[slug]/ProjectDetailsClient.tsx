@@ -1,4 +1,5 @@
-'use client';
+//app/blog/[slug]/rojectDetailsClient.tsx
+ 'use client';
 
 import React from 'react';
 
